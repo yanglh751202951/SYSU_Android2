@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SYSU"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/sysu"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/sysuImage"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/sysu" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username1"
+                android:text="@string/username1"
+                android:textSize="@dimen/etWordSp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/username2"
+                android:id="@+id/editText"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/password1"
+                android:text="@string/password1"
+                android:gravity="end"
+                android:textSize="@dimen/etWordSp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password2"
+                android:id="@+id/editText2"/>
+        </TableRow>
+    </TableLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            style="@style/radioButtonStyle"
+            android:id="@+id/radio1"
+            android:checked="true"
+            android:text="@string/student" />
+
+        <RadioButton
+            style="@style/radioButtonStyle"
+            android:id="@+id/radio2"
+            android:text="@string/teacher" />
+
+        <RadioButton
+            style="@style/radioButtonStyle"
+            android:id="@+id/radio3"
+            android:text="@string/corporation" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio4"
+            android:text="@string/manager"
+            android:textSize="@dimen/etWordSp" />
+
+    </RadioGroup>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/Button"
+            android:layout_marginRight="5dp"
+            android:text="@string/signIn" />
+
+        <Button
+            style="@style/Button"
+            android:text="@string/register" />
+
+    </LinearLayout>
+
+</LinearLayout>
